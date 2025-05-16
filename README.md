@@ -18,7 +18,7 @@ My dotfiles, mainly used on Fedora Linux.
 Install the required packages, for Fedora Linux:
 
 ```bash
-dnf install -y git make tmux vim
+dnf install -y git make cmake g++ gcc tmux vim
 ```
 
 ## Installation
