@@ -1,6 +1,6 @@
 # dotfiles
 
-![Build Status](https://github.com/dotdc/dotfiles/actions/workflows/ci-build.yml/badge.svg)
+![Build Status](https://github.com/AliMehraji/dotfiles/actions/workflows/ci-build.yml/badge.svg)
 
 ## Description
 
