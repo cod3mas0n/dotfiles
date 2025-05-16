@@ -20,7 +20,7 @@ jobs:
 
       - name: Install deps, make & lint
         run: |
-          apt update && apt install -y bash git make shellcheck vim
+          apt update && apt install -y bash git make shellcheck vim curl
           make dotfiles vim
         # shellcheck ~/.bashrc
         # shellcheck ~/.bash_profile
