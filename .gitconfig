@@ -1,0 +1,33 @@
+[user]
+  name = Ali Mehraji
+  email = a.mehraji75@gmail.com
+  signingkey = DD669A2FBB154102
+[commit]
+  gpgsign = true
+[alias]
+  st = status
+  pp = pull --prune
+  pb = !git push --set-upstream origin $(git branch --show-current)
+  ci = commit -s -S
+  log = log --name-status
+  lol = log --graph --decorate --pretty=oneline --abbrev-commit -n 20
+  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  ls = ls-files
+  # Show files ignored by git
+  ign = ls-files -o -i --exclude-standard
+[pull]
+  rebase = false
+[push]
+  followTags = true
+[merge]
+  tool = vscode
+[mergetool "vscode"]
+  cmd = code --wait --new-window $MERGED
+[diff]
+  tool = vscode
+[difftool "vscode"]
+  cmd = code --wait --diff --new-window $LOCAL $REMOTE
+[url "git@github.com:"]
+  insteadOf = gh:
+[init]
+  defaultBranch = main

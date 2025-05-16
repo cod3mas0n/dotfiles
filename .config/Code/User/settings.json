@@ -1,0 +1,48 @@
+{
+    "git.autofetch": true,
+    "editor.fontSize": 17,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "terminal.integrated.fontFamily": "Fira Code",
+    "terminal.integrated.fontSize": 16,
+    "editor.mouseWheelZoom": true,
+    "debug.console.fontSize": 17,
+    "scm.inputFontSize": 15,
+    "editor.fontWeight": "normal",
+    "python.analysis.completeFunctionParens": true,
+    "python.analysis.autoImportCompletions": true,
+    "workbench.startupEditor": "none",
+    "ansible.python.interpreterPath": "/usr/bin/python3",
+    "ansible.ansible.path": "/usr/bin/ansible",
+    "breadcrumbs.enabled": false,
+    "editor.renderWhitespace": "all",
+    "editor.lineHeight": 26,
+    "terminal.integrated.mouseWheelZoom": true,
+    "cSpell.userWords": [
+        "tldextract"
+    ],
+    "vs-kubernetes": {
+        "vs-kubernetes.crd-code-completion": "enabled"
+    },
+    "workbench.preferredDarkColorTheme": "One Dark Pro Darker",
+    "oneDarkPro.editorTheme": "One Dark Pro Darker",
+    "settingsSync.ignoredExtensions": [
+        "georgewfraser.vscode-javac"
+    ],
+    "extensions.ignoreRecommendations": true,
+    "workbench.colorTheme": "One Dark Pro Darker",
+    "explorer.confirmDelete": false,
+    "oneDarkPro.italic": false,
+    "editor.indentSize": "2",
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.hovers.avatars": false,
+    "gitlens.views.commitDetails.autolinks.enabled": false,
+    "gitlens.views.contributors.showAllBranches": true,
+	"markdown.extension.print.theme": "dark",
+    "redhat.telemetry.enabled": false,
+    "explorer.confirmDragAndDrop": false,
+    "yaml.maxItemsComputed": 7000,
+    "editor.minimap.enabled": false,
+    "workbench.editor.empty.hint": "hidden"
+
+}
