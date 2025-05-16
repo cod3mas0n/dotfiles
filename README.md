@@ -35,7 +35,7 @@ Several installation options:
 ## Example usage
 
 ```console
-git clone REPO
+git clone https://github.com/AliMehraji/dotfiles.git
 cd dotfiles
 make dotfiles
 ```
