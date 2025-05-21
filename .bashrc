@@ -170,7 +170,7 @@ alias curlx='curl -x "socks5h://127.0.0.1:10808"'
 
 
 export PATH=$HOME/.nami/bin:$HOME/.local/bin:$HOME/.cargo/bin:$HOME/.minio-binaries:/usr/local/go/bin:$HOME/go/bin:$PATH
-# export EDITOR="vim"
+export EDITOR="vim"
 alias open='gio open'
 
 # ---- K8s --------
