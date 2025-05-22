@@ -22,7 +22,7 @@ OH_MY_BASH_COMPLETIONS_DIR := .oh-my-bash/custom/completions
 
 .PHONY: ohmybash
 ohmybash:
-	bash <(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh) &> /dev/null
+	bash <(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)
 
 	@cp -r ~/${OH_MY_BASH_THEMES_DIR} ~/.bak/ &> /dev/null | true
 	@rm -rf ~/${OH_MY_BASH_THEMES_DIR} &> /dev/null | true
