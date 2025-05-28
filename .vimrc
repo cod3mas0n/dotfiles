@@ -12,6 +12,16 @@ set encoding=utf-8
 set termguicolors
 set nowrap
 
+" MarkDown
+
+" https://github.com/preservim/vim-markdown?tab=readme-ov-file#syntax-concealing
+" set conceallevel=2
+let g:vim_markdown_frontmatter = 1
+let g:vim_markdown_toml_frontmatter = 1
+let g:vim_markdown_json_frontmatter = 1
+let g:vim_markdown_strikethrough = 1
+let g:vim_markdown_borderless_table = 1
+
 " Display Settings
 set hlsearch                    " Highlights search results
 set showcmd                     " Shows current command in the statusline
@@ -58,6 +68,8 @@ call plug#begin()
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'ycm-core/YouCompleteMe', { 'do': './install.py --go-completer' }
+Plug 'godlygeek/tabular'
+Plug 'preservim/vim-markdown'
 " Using a tagged release; wildcard allowed (requires git 1.9.2 or above)
 Plug 'fatih/vim-go', { 'tag': '*' }
 call plug#end()
