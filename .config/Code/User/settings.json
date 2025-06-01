@@ -30,7 +30,6 @@
         "georgewfraser.vscode-javac"
     ],
     "extensions.ignoreRecommendations": true,
-    "workbench.colorTheme": "One Dark Pro Darker",
     "explorer.confirmDelete": false,
     "oneDarkPro.italic": false,
     "editor.indentSize": "2",
@@ -43,6 +42,7 @@
     "explorer.confirmDragAndDrop": false,
     "yaml.maxItemsComputed": 7000,
     "editor.minimap.enabled": false,
-    "workbench.editor.empty.hint": "hidden"
+    "workbench.editor.empty.hint": "hidden",
+    "workbench.colorTheme": "One Dark Pro Darker"
 
 }
