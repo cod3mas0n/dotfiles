@@ -2,6 +2,9 @@
 # https://yamllint.readthedocs.io/en/stable/configuration.html#
 extends: default
 
+ignore: |
+  .git/
+
 # https://yamllint.readthedocs.io/en/stable/configuration.html#yaml-files-extensions
 yaml-files:
   - '*.yaml'
@@ -29,7 +32,8 @@ rules:
   braces:
     forbid: false
     max-spaces-inside: 1
+  brackets:
+    min-spaces-inside: 0
   octal-values:
     forbid-implicit-octal: true
     forbid-explicit-octal: true
-...
