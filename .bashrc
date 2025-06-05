@@ -184,7 +184,7 @@ complete -F _kube_contexts kubectx kctx
 
 # ---- ArgoCD --------
 
-# source <(argocd completion bash)
+source <(argocd completion bash)
 # Argo WorkFlow
 # source <(argo completion bash)
 
@@ -199,9 +199,11 @@ export FZF_CTRL_T_OPTS="--walker-skip .git,node_modules,target --preview 'bat -n
 export FZF_COMPLETION_OPTS='--border --info=inline'
 
 
-complete -C $HOME/.minio-binaries/mc mc
+complete -C "${HOME}"/.minio-binaries/mc mc
 
-# export GOPROXY=https://goproxy.cn
+## Go Proxy
+export GO111MODULE=on
+export GOPROXY=https://goproxy.cn
 
 # ---- git diff with vim --------
 
