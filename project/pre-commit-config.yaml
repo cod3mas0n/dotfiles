@@ -1,6 +1,5 @@
 ---
 repos:
-
   # install pr-commit with pip install pre-commit
   # pre-commit install --all to install whatever in .pre-commit-config.yaml
   # pre-commit run --all-files
@@ -30,7 +29,8 @@ repos:
     rev: v1.5.0
     hooks:
       - id: detect-secrets
-        args: ['--baseline', '.secrets.baseline']
+        # args: ['--baseline', '.secrets.baseline']
+        args: ['scan']
 
   - repo: https://github.com/adrienverge/yamllint
     rev: v1.36.2
@@ -45,15 +45,16 @@ repos:
         args: ["-conf", ".yamlfmt"]
 
   - repo: https://github.com/gitleaks/gitleaks
-    rev: v8.26.0
+    rev: v8.27.2
     hooks:
       - id: gitleaks
-
+        args: ["--pre-commit", "--redact", "--staged", "--verbose"]
   # gem needs to be installed
   - repo: https://github.com/markdownlint/markdownlint
     rev: v0.12.0
     hooks:
       - id: markdownlint
+        # insted of args, use the .mdlrc
         #args: ["-r", "~MD007,~MD013"]
 
   # need the hadolit installed
