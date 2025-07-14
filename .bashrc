@@ -168,7 +168,6 @@ alias po='sudo shutdown --poweroff'
 #alias code='code --proxy-server="socks5h://127.0.0.1:10808"'
 alias curlx='curl -x "socks5h://127.0.0.1:10808"'
 
-
 export PATH=$HOME/.nami/bin:$HOME/.local/bin:$HOME/.cargo/bin:$HOME/.minio-binaries:/usr/local/go/bin:$HOME/go/bin:$PATH
 export EDITOR="vim"
 alias open='gio open'
@@ -188,7 +187,6 @@ source <(argocd completion bash)
 # Argo WorkFlow
 # source <(argo completion bash)
 
-
 # ---- FuzzyFinder (fzf) --------
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
@@ -202,9 +200,23 @@ export FZF_COMPLETION_OPTS='--border --info=inline'
 complete -C "${HOME}"/.minio-binaries/mc mc
 
 ## Go Proxy
-export GO111MODULE=on
-export GOPROXY=https://goproxy.cn
+# export GO111MODULE=on
+# export GOPROXY=https://goproxy.cn
 
 # ---- git diff with vim --------
 
 alias gvdiff='git difftool --tool=vimdiff --no-prompt'
+
+# ---- Set proxy --------
+
+custom_setproxy() {
+    export http_proxy="http://127.0.0.1:10808"
+    export https_proxy="http://127.0.0.1:10808"
+    echo "Proxy has been set."
+}
+
+custom_unsetproxy() {
+    unset http_proxy
+    unset https_proxy
+    echo "Proxy has been unset."
+}
