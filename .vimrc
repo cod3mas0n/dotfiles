@@ -25,6 +25,7 @@ let g:vim_markdown_borderless_table = 1
 " Display Settings
 set hlsearch                    " Highlights search results
 set showcmd                     " Shows current command in the statusline
+set cursorline
 set exrc                        " Read <cwd>/.vimrc
 set ttyfast                     " More characters will be sent to the screen for redrawing
 set wildmenu                    " A better menu in command mode
