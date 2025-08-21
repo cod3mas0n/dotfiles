@@ -3,7 +3,7 @@ repos:
   # pre-commit install --all to install whatever in .pre-commit-config.yaml
   # pre-commit run --all-files
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v5.0.0
+    rev: v6.0.0
     hooks:
       - id: check-merge-conflict
       - id: end-of-file-fixer
@@ -15,7 +15,7 @@ repos:
       - id: detect-private-key
 
   - repo: https://github.com/gitleaks/gitleaks
-    rev: v8.26.0
+    rev: v8.28.0
     hooks:
       - id: gitleaks
         args: ["--pre-commit", "--redact", "--staged", "--verbose"]
