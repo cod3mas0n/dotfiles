@@ -20,6 +20,11 @@ repos:
       - id: gitleaks
         args: ["--pre-commit", "--redact", "--staged", "--verbose"]
 
+  - repo: https://github.com/trufflesecurity/trufflehog
+    rev: v3.90.5
+    hooks:
+      - id: trufflehog
+
   # gem needs to be installed
   - repo: https://github.com/markdownlint/markdownlint
     rev: v0.12.0

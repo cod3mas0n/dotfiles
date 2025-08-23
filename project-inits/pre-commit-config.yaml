@@ -1,8 +1,5 @@
 ---
 repos:
-  # install pr-commit with pip install pre-commit
-  # pre-commit install --all to install whatever in .pre-commit-config.yaml
-  # pre-commit run --all-files
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v5.0.0
     hooks:
@@ -23,15 +20,6 @@ repos:
         exclude: "^.git"
         files: "\\.sh$"
 
-  # pip install detect-secrets
-  # detect-secrets scan > .secrets.baseline
-  - repo: https://github.com/Yelp/detect-secrets
-    rev: v1.5.0
-    hooks:
-      - id: detect-secrets
-        # args: ['--baseline', '.secrets.baseline']
-        args: ['scan']
-
   - repo: https://github.com/adrienverge/yamllint
     rev: v1.36.2
     hooks:
@@ -44,20 +32,13 @@ repos:
       - id: yamlfmt
         args: ["-conf", ".yamlfmt"]
 
-  - repo: https://github.com/gitleaks/gitleaks
-    rev: v8.27.2
-    hooks:
-      - id: gitleaks
-        args: ["--pre-commit", "--redact", "--staged", "--verbose"]
-  # gem needs to be installed
   - repo: https://github.com/markdownlint/markdownlint
     rev: v0.12.0
     hooks:
       - id: markdownlint
         # insted of args, use the .mdlrc
-        #args: ["-r", "~MD007,~MD013"]
+        # args: ["-r", "~MD007,~MD013"]
 
-  # need the hadolit installed
   - repo: https://github.com/hadolint/hadolint
     rev: v2.12.0
     hooks:
@@ -68,3 +49,21 @@ repos:
         types: ["dockerfile"]
         entry: hadolint
         files: (Dockerfile.*|.*/Dockerfile)
+
+# Security
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.27.2
+    hooks:
+      - id: gitleaks
+        args: ["--pre-commit", "--redact", "--staged", "--verbose"]
+
+  - repo: https://github.com/Yelp/detect-secrets
+    rev: v1.5.0
+    hooks:
+      - id: detect-secrets
+        args: ['scan']
+
+  - repo: https://github.com/trufflesecurity/trufflehog
+    rev: v3.90.5
+    hooks:
+      - id: trufflehog
