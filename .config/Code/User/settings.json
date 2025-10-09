@@ -4,6 +4,7 @@
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
     "terminal.integrated.fontFamily": "Fira Code",
+    "terminal.integrated.fontSize": 17,
     "editor.mouseWheelZoom": true,
     "debug.console.fontSize": 17,
     "scm.inputFontSize": 15,
@@ -29,6 +30,7 @@
         "georgewfraser.vscode-javac"
     ],
     "extensions.ignoreRecommendations": true,
+    "workbench.colorTheme": "One Dark Pro Darker",
     "explorer.confirmDelete": false,
     "oneDarkPro.italic": false,
     "editor.indentSize": "2",
@@ -36,14 +38,27 @@
     "gitlens.hovers.avatars": false,
     "gitlens.views.commitDetails.autolinks.enabled": false,
     "gitlens.views.contributors.showAllBranches": true,
-	"markdown.extension.print.theme": "dark",
+    "markdown.extension.print.theme": "dark",
     "redhat.telemetry.enabled": false,
     "explorer.confirmDragAndDrop": false,
     "yaml.maxItemsComputed": 7000,
-    "editor.minimap.enabled": false,
-    "workbench.editor.empty.hint": "hidden",
-    "workbench.colorTheme": "One Dark Pro Darker",
     "http.proxy": "socks5://127.0.0.1:10808",
-    "terminal.integrated.fontSize": 15
+    "docker.extension.dockerEngineAvailabilityPrompt": false,
+    "docker.extension.enableComposeLanguageServer": false,
+    "[dockercompose]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": "advanced",
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": false,
+            "strings": true
+        },
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[github-actions-workflow]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
 
 }
