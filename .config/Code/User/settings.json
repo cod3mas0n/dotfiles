@@ -60,5 +60,6 @@
         "editor.defaultFormatter": "redhat.vscode-yaml"
     },
     "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "makefile.configureOnOpen": false,
 
 }
