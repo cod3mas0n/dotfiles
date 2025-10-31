@@ -30,7 +30,7 @@ set exrc                        " Read <cwd>/.vimrc
 set ttyfast                     " More characters will be sent to the screen for redrawing
 set wildmenu                    " A better menu in command mode
 set wildmode=longest:full,full
-set laststatus=2
+" set laststatus=2
 set statusline=%f\:%l\:%c\ \[%L\]
 
 " Color Settings
