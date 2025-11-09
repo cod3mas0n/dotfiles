@@ -220,3 +220,13 @@ custom_unsetproxy() {
     unset https_proxy
     echo "Proxy has been unset."
 }
+
+#kube_config_gen() {
+#
+#	mapfile -t KUBE_CONFIGS < <(find "${HOME}/.kube" -maxdepth 1 -type f -regex ".*.y[a]?ml")
+#	local KUBE_CONFIG=$(IFS=:; echo "${KUBE_CONFIGS[*]}")
+#	rm ${HOME}/.kube/config
+#	KUBECONFIG=${KUBE_CONFIG} kubectl config view --merge --flatten > ${HOME}/.kube/config
+#	chmod +600 ${HOME}/.kube/config
+#
+#}
