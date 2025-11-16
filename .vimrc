@@ -60,6 +60,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'nvie/vim-flake8'
 Plugin 'scrooloose/nerdtree'
+Plugin 'fatih/vim-go'
 call vundle#end()            " required
 
 " Vim-Plug Plugin Manager
@@ -72,7 +73,6 @@ Plug 'ycm-core/YouCompleteMe', { 'do': './install.py --go-completer' }
 Plug 'godlygeek/tabular'
 Plug 'preservim/vim-markdown'
 " Using a tagged release; wildcard allowed (requires git 1.9.2 or above)
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 call plug#end()
 
 " ===================== Customize mapping =========================

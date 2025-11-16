@@ -21,6 +21,6 @@ jobs:
       - name: Install deps, make & lint
         run: |
           apt update && apt install -y bash git make shellcheck vim curl
-          make dotfiles vim
+          make dotfiles
         # shellcheck ~/.bashrc
         # shellcheck ~/.bash_profile
