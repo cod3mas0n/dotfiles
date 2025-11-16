@@ -61,6 +61,6 @@
     },
     "workbench.secondarySideBar.defaultVisibility": "hidden",
     "makefile.configureOnOpen": false,
-    "gitlens.currentLine.enabled": false,
+    "gitlens.currentLine.enabled": true,
     "gitlens.codeLens.enabled": false
 }
