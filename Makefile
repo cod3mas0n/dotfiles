@@ -84,32 +84,7 @@ vim:
 	curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 	vim +PlugInstall +qall
 
-.PHONY: vscode
-vscode:
-	@cp ~/.config/Code/User/settings.json ~/.bak/vscode.settings.json &> /dev/null | true
-	@rm ~/.config/Code/User/settings.json &> /dev/null | true
-	@mkdir -p ~/.config/Code/User
-	ln -s ${PWD}/.config/Code/User/settings.json ~/.config/Code/User/settings.json
 
-	code --install-extension redhat.ansible
-	code --install-extension streetsidesoftware.code-spell-checker
-	code --install-extension ms-azuretools.vscode-containers
-	code --install-extension editorconfig.editorconfig
-	code --install-extension gitlab.gitlab-workflow
-	code --install-extension eamodio.gitlens
-	code --install-extension golang.go
-	code --install-extension hashicorp.terraform
-	code --install-extension isudox.vscode-jetbrains-keybindings
-	code --install-extension ms-kubernetes-tools.vscode-kubernetes-tools
-	code --install-extension lunuan.kubernetes-templates
-	code --install-extension yzhang.markdown-all-in-one
-	code --install-extension davidanson.vscode-markdownlint
-	code --install-extension zhuangtongfa.material-theme
-	code --install-extension esbenp.prettier-vscode
-	code --install-extension ms-python.vscode-pylance
-	code --install-extension ms-python.python
-	code --install-extension ms-python.debugpy
-	code --install-extension redhat.vscode-yaml
 
 .PHONY: end
 end:

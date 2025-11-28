@@ -207,6 +207,7 @@ complete -C "${HOME}"/.minio-binaries/mc mc
 
 alias gvdiff='git difftool --tool=vimdiff --no-prompt'
 
+alias mkpasswd='mkpasswd --method=SHA-512'
 # ---- Set proxy --------
 
 custom_setproxy() {

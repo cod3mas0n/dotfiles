@@ -62,5 +62,6 @@
     "workbench.secondarySideBar.defaultVisibility": "hidden",
     "makefile.configureOnOpen": false,
     "gitlens.currentLine.enabled": true,
-    "gitlens.codeLens.enabled": false
+    "gitlens.codeLens.enabled": false,
+    "terminal.external.linuxExec": ""
 }
