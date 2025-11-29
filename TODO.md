@@ -1,4 +1,4 @@
 # TODO
 
-- [ ] Separate Makefile to *.mak
+- [x] Separate Makefile to *.mak
 - [ ] Update README.md
