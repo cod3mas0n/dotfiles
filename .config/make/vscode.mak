@@ -1,9 +1,6 @@
 .PHONY: vscode-configs
 vscode-configs: backup-dir # Links code user settings, and install vscode extensions
-	@cp ~/.config/Code/User/settings.json ~/.dotfiles.backup/vscode.settings.json &> /dev/null | true
-	@rm ~/.config/Code/User/settings.json &> /dev/null | true
 	@echo "## —— vscode config --------------------------------------------------------------------------------"
-	@mkdir -p ~/.config/Code/User
 	ln -fs ${DOTFILES_DIR_PATH}/.config/Code/User/settings.json ~/.config/Code/User/settings.json
 
 # 	code --install-extension davidanson.vscode-markdownlint
