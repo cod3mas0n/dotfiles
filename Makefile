@@ -1,6 +1,5 @@
 # Makefile
 .PHONY: all SHELL
-all: backup-dir dotfiles
 
 .DEFAULT_GOAL := help
 .EXPORT_ALL_VARIABLES:
@@ -40,12 +39,15 @@ export HEADER
 DOTFILES_DIR_PATH := ${PWD}/home
 
 .PHONY: dotfiles
-dotfiles: oh-my-bash \
+dotfiles: backup-dir \
+	oh-my-bash \
 	gnome-gtk git-config \
 	tmux vim \
-	vscode-configs end \
+	vscode-configs \
 
-
-.PHONY: end
-end:
-	@echo "A copy of the previous dotfiles are available in the '~/.dotfiles.backup ' directory."
+# Final target that runs last and only if everything succeeded
+done: dotfiles
+	@echo ""
+	@echo "ALL DONE – everything succeeded!"
+	@echo "dotfiles are now customized"
+	@exec bash
