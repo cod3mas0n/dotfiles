@@ -39,8 +39,7 @@ export HEADER
 DOTFILES_DIR_PATH := ${PWD}/home
 
 .PHONY: dotfiles
-dotfiles: backup-dir \
-	oh-my-bash \
+dotfiles: oh-my-bash \
 	gnome-gtk git-config \
 	tmux vim \
 	vscode-configs \
