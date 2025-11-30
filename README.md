@@ -30,12 +30,11 @@ Several installation options:
 | `make dotfiles` | Backup current dotfiles in `~/.bak` & install theses  |
 | `make vim`      | Configure Vim and install Vundle & Vim plugins        |
 | `make vscode`   | Configure VScode & install extensions                 |
-| `make all`      | Make all the above                                    |
 
 ## Example usage
 
 ```console
-git clone https://github.com/AliMehraji/dotfiles.git
+git clone https://github.com/cod3mas0n/dotfiles.git
 cd dotfiles
 make dotfiles
 ```
