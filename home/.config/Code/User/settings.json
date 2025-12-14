@@ -42,7 +42,6 @@
     "redhat.telemetry.enabled": false,
     "explorer.confirmDragAndDrop": false,
     "yaml.maxItemsComputed": 7000,
-    "http.proxy": "socks5://127.0.0.1:10808",
     "docker.extension.dockerEngineAvailabilityPrompt": false,
     "docker.extension.enableComposeLanguageServer": false,
     "[dockercompose]": {
@@ -63,5 +62,6 @@
     "makefile.configureOnOpen": false,
     "gitlens.currentLine.enabled": true,
     "gitlens.codeLens.enabled": false,
-    "terminal.external.linuxExec": ""
+    "terminal.external.linuxExec": "",
+    "http.proxy": "socks5h://127.0.0.1:10808"
 }
