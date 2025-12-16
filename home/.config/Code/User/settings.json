@@ -62,6 +62,7 @@
     "makefile.configureOnOpen": false,
     "gitlens.currentLine.enabled": true,
     "gitlens.codeLens.enabled": false,
-    "terminal.external.linuxExec": "",
-    "http.proxy": "socks5h://127.0.0.1:10808"
+    "terminal.external.linuxExec": "/usr/bin/ptyxis",
+    "http.proxy": "socks5h://127.0.0.1:10808",
+    "terminal.integrated.suggest.enabled": false
 }
