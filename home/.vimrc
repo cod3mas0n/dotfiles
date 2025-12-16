@@ -61,6 +61,8 @@ Plugin 'vim-syntastic/syntastic'
 Plugin 'nvie/vim-flake8'
 Plugin 'scrooloose/nerdtree'
 Plugin 'fatih/vim-go'
+Plugin 'godlygeek/tabular'
+Plugin 'preservim/vim-markdown'
 call vundle#end()            " required
 
 " Vim-Plug Plugin Manager
@@ -70,8 +72,6 @@ call plug#begin()
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'ycm-core/YouCompleteMe', { 'do': './install.py --go-completer' }
-Plug 'godlygeek/tabular'
-Plug 'preservim/vim-markdown'
 " Using a tagged release; wildcard allowed (requires git 1.9.2 or above)
 call plug#end()
 

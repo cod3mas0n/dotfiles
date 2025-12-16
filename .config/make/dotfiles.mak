@@ -53,5 +53,7 @@ vim: ## Links .vimrc to ~/.vimrc and install vim plugins
 
 	@git clone --quiet https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 	@vim +PluginInstall +qall
+	@vim +PluginUpdate +qall
 	@curl -fSsLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 	@vim +PlugInstall +qall
+	@vim +PlugUpdate +qall
