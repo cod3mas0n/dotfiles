@@ -231,3 +231,4 @@ custom_unsetproxy() {
 #	chmod +600 ${HOME}/.kube/config
 #
 #}
+. "$HOME/.cargo/env"
