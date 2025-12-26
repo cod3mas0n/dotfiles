@@ -169,7 +169,7 @@ alias po='sudo shutdown --poweroff'
 #alias code='code --proxy-server="socks5h://127.0.0.1:10808"'
 alias curlx='curl -x "socks5h://127.0.0.1:10808"'
 
-export PATH=$HOME/.nami/bin:$HOME/.local/bin:$HOME/.cargo/bin:$HOME/.minio-binaries:/usr/local/go/bin:$HOME/go/bin:$PATH
+export PATH=$HOME/.local/bin:$HOME/.cargo/bin:/usr/local/go/bin:$PATH
 export EDITOR="vim"
 alias open='gio open'
 
