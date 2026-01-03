@@ -99,6 +99,7 @@ completions=(
 # Add wisely, as too many aliases slow down shell startup.
 aliases=(
   general
+  openforti
 )
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-bash/plugins/*)
@@ -169,7 +170,7 @@ alias po='sudo shutdown --poweroff'
 #alias code='code --proxy-server="socks5h://127.0.0.1:10808"'
 alias curlx='curl -x "socks5h://127.0.0.1:10808"'
 
-export PATH=$HOME/.local/bin:$HOME/.cargo/bin:/usr/local/go/bin:$PATH
+export PATH=$HOME/.local/bin:$HOME/.cargo/bin:/usr/local/go/bin:$HOME/.minio-binaries:$PATH
 export EDITOR="vim"
 alias open='gio open'
 
