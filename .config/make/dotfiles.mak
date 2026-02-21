@@ -13,6 +13,7 @@ oh-my-bash: ## Install and Configure oh-my-bash, and links .bashrc
 
 	@rm -rf ~/${OH_MY_BASH_THEMES_DIR} &> /dev/null | true
 	@rm -rf ~/${OH_MY_BASH_COMPLETIONS_DIR} &> /dev/null | true
+	@rm -rf ~/${OH_MY_BASH_ALIASES_DIR} &> /dev/null | true
 
 	ln -fs ${DOTFILES_DIR_PATH}/${OH_MY_BASH_THEMES_DIR} ~/${OH_MY_BASH_THEMES_DIR}
 	ln -fs ${DOTFILES_DIR_PATH}/${OH_MY_BASH_COMPLETIONS_DIR} ~/${OH_MY_BASH_COMPLETIONS_DIR}
