@@ -63,5 +63,7 @@
     "gitlens.currentLine.enabled": true,
     "gitlens.codeLens.enabled": false,
     "terminal.external.linuxExec": "/usr/bin/ptyxis",
-    "terminal.integrated.suggest.enabled": false
+    "terminal.integrated.suggest.enabled": false,
+    "editor.minimap.enabled": false,
+    "terminal.integrated.initialHint": false
 }

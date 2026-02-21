@@ -2,6 +2,7 @@
 
 OH_MY_BASH_THEMES_DIR := .oh-my-bash/custom/themes
 OH_MY_BASH_COMPLETIONS_DIR := .oh-my-bash/custom/completions
+OH_MY_BASH_ALIASES_DIR := .oh-my-bash/custom/aliases
 
 .PHONY: oh-my-bash
 oh-my-bash: ## Install and Configure oh-my-bash, and links .bashrc
@@ -15,6 +16,7 @@ oh-my-bash: ## Install and Configure oh-my-bash, and links .bashrc
 
 	ln -fs ${DOTFILES_DIR_PATH}/${OH_MY_BASH_THEMES_DIR} ~/${OH_MY_BASH_THEMES_DIR}
 	ln -fs ${DOTFILES_DIR_PATH}/${OH_MY_BASH_COMPLETIONS_DIR} ~/${OH_MY_BASH_COMPLETIONS_DIR}
+	ln -fs ${DOTFILES_DIR_PATH}/${OH_MY_BASH_ALIASES_DIR} ~/${OH_MY_BASH_ALIASES_DIR}
 	ln -fs ${DOTFILES_DIR_PATH}/.bashrc ~/.bashrc
 
 .PHONY: gnome-gtk
