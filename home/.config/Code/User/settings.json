@@ -65,5 +65,14 @@
     "terminal.external.linuxExec": "/usr/bin/ptyxis",
     "terminal.integrated.suggest.enabled": false,
     "editor.minimap.enabled": false,
-    "terminal.integrated.initialHint": false
+    "terminal.integrated.initialHint": false,
+    "yaml.disableSchemaDetection": [
+        "**/.github/workflows/*.yml",
+        "**/.github/workflows/*.yaml",
+        "**/.gitea/workflows/*.yml",
+        "**/.gitea/workflows/*.yaml",
+        "**/.forgejo/workflows/*.yml",
+        "**/.forgejo/workflows/*.yaml"
+    ],
+    "http.proxy": "socks5h://127.0.0.1:10808"
 }
