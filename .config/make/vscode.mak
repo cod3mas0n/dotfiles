@@ -1,5 +1,7 @@
+## —— vscode configs -------------------------------------------------------------------------------
+
 .PHONY: vscode-configs
-vscode-configs: # Links code user settings, and install vscode extensions
+vscode-configs: ## Links code user settings, and install vscode extensions
 	@echo "## —— vscode config --------------------------------------------------------------------------------"
 	@mkdir -p ~/.config/Code/User
 	ln -fs ${DOTFILES_DIR_PATH}/.config/Code/User/settings.json ~/.config/Code/User/settings.json

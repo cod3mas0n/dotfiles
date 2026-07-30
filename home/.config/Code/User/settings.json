@@ -1,9 +1,9 @@
 {
     "git.autofetch": true,
     "editor.fontSize": 17,
-    "editor.fontFamily": "Fira Code",
+    "editor.fontFamily": "Cascadia Code",
     "editor.fontLigatures": true,
-    "terminal.integrated.fontFamily": "Fira Code",
+    "terminal.integrated.fontFamily": "Cascadia Code",
     "terminal.integrated.fontSize": 17,
     "editor.mouseWheelZoom": true,
     "debug.console.fontSize": 17,
