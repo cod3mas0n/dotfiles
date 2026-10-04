@@ -76,5 +76,6 @@
         "**/.forgejo/workflows/*.yml",
         "**/.forgejo/workflows/*.yaml"
     ],
-    "http.proxy": "http://127.0.0.1:10808"
+    "http.proxy": "http://127.0.0.1:10808",
+    "claudeCode.preferredLocation": "panel"
 }
