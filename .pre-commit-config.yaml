@@ -20,10 +20,17 @@ repos:
       - id: gitleaks
         args: ["--pre-commit", "--redact", "--staged", "--verbose"]
 
-  - repo: https://github.com/trufflesecurity/trufflehog
-    rev: v3.90.5
+# Security
+
+  - repo: local
     hooks:
-      - id: trufflehog
+      - id: trufflehog-full-scan
+        name: TruffleHog - Full Repository Secret Scan
+        entry: trufflehog filesystem . --config=trufflehog-config.yaml --exclude-paths=trufflehog-excludes.txt --results=verified,unverified,unknown --fail
+        language: system
+        pass_filenames: false
+        always_run: true
+        verbose: true
 
   # gem needs to be installed
   - repo: https://github.com/markdownlint/markdownlint

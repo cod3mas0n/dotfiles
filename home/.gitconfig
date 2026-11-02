@@ -1,7 +1,7 @@
 [user]
   name = Ali Mehraji
-  email = a.mehraji75@gmail.com
-  signingkey = 0D11A1F8EF7220BE
+  email = ali.mehraji@snappshop.ir
+  signingkey = D1F98CF268C436A4
 [commit]
   gpgsign = true
 [alias]
