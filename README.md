@@ -8,10 +8,10 @@ My dotfiles, mainly used on Fedora Linux.
 
 ## Features
 
-- Backup your current dotfiles to `~/.bak`
+- Back up replaced dotfiles to `~/.bak`, with numbered names if a backup already exists
 - Creates dotfiles as symlinks to this repository
 - Automatic install of Vundle & Vim plugins
-- Automatic install of VScode extensions
+- Link VS Code user settings
 
 ## Requirements
 
@@ -25,18 +25,20 @@ dnf install -y git make cmake g++ gcc tmux vim
 
 Several installation options:
 
-| Command         | Description                                           |
-|-----------------|-------------------------------------------------------|
-| `make dotfiles` | Backup current dotfiles in `~/.bak` & install theses  |
-| `make vim`      | Configure Vim and install Vundle & Vim plugins        |
-| `make vscode`   | Configure VScode & install extensions                 |
+| Command               | Description                                      |
+|-----------------------|--------------------------------------------------|
+| `make help`           | List available targets                           |
+| `make all`            | Configure all dotfiles                           |
+| `make dotfiles`       | Configure all dotfiles                           |
+| `make vim`            | Configure Vim and install Vundle & Vim plugins   |
+| `make vscode-configs` | Link VS Code user settings                       |
 
 ## Example usage
 
 ```console
 git clone https://github.com/cod3mas0n/dotfiles.git
 cd dotfiles
-make dotfiles
+make all
 ```
 
 ## Resources

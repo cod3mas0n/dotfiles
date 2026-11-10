@@ -1,5 +1,5 @@
 # Makefile
-.PHONY: all SHELL
+.PHONY: dotfiles SHELL
 
 .DEFAULT_GOAL := help
 .EXPORT_ALL_VARIABLES:
@@ -38,7 +38,6 @@ export HEADER
 
 DOTFILES_DIR_PATH := ${PWD}/home
 
-.PHONY: dotfiles
 dotfiles: oh-my-bash \
 	gnome-gtk git-config \
 	tmux vim \
