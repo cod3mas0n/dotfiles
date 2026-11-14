@@ -110,7 +110,7 @@ colorscheme onedark
 
 " JS, HTML, CSS, YAML, JSON Settings
 au BufNewFile,BufRead *.js, *.html, *.css, *.yml, *.yaml, *.json
-    \ set noexpandtab
+    \ set expandtab
     \ set tabstop=2
     \ set softtabstop=2
     \ set shiftwidth=2

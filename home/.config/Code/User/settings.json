@@ -35,7 +35,9 @@
     "workbench.colorTheme": "One Dark Pro Darker",
     "explorer.confirmDelete": false,
     "oneDarkPro.italic": false,
-    "editor.indentSize": "2",
+    "editor.indentSize": 2,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
     "gitlens.hovers.currentLine.over": "line",
     "gitlens.hovers.avatars": false,
     "gitlens.views.commitDetails.autolinks.enabled": false,
@@ -56,6 +58,21 @@
             "strings": true
         },
         "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[yaml]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.indentSize": 2,
+        "editor.detectIndentation": false,
+        "editor.autoIndent": "advanced",
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[yaml-jinja]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.indentSize": 2,
+        "editor.detectIndentation": false,
+        "editor.autoIndent": "advanced"
     },
     "[github-actions-workflow]": {
         "editor.defaultFormatter": "redhat.vscode-yaml"
@@ -78,5 +95,13 @@
     ],
     "http.proxy": "http://127.0.0.1:10808",
     "editor.inlineSuggest.enabled": true,
-    "github.copilot.enable": false
+    "github.copilot.enable": {
+        "*": false
+    },
+    "yaml.schemas": {
+        "file://${userHome}/.vscode/extensions/continue.continue-2.0.0-linux-x64/config-yaml-schema.json": [
+            ".continue/**/*.yaml"
+        ]
+    },
+    "workbench.activityBar.location": "bottom"
 }
