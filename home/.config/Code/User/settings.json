@@ -32,16 +32,19 @@
         "georgewfraser.vscode-javac"
     ],
     "extensions.ignoreRecommendations": true,
-    "workbench.colorTheme": "One Dark Pro Darker",
+    "workbench.colorTheme": "Tokyo Night",
     "explorer.confirmDelete": false,
     "oneDarkPro.italic": false,
     "editor.indentSize": 2,
     "editor.insertSpaces": true,
     "editor.tabSize": 2,
-    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.blame.enabled": true,
     "gitlens.hovers.avatars": false,
     "gitlens.views.commitDetails.autolinks.enabled": false,
     "gitlens.views.contributors.showAllBranches": true,
+    "gitlens.currentLine.enabled": true,
+    "gitlens.codeLens.enabled": false,
+    "editor.codeLens": false,
     "markdown.extension.print.theme": "dark",
     "redhat.telemetry.enabled": false,
     "explorer.confirmDragAndDrop": false,
@@ -79,8 +82,6 @@
     },
     "workbench.secondarySideBar.defaultVisibility": "hidden",
     "makefile.configureOnOpen": false,
-    "gitlens.currentLine.enabled": true,
-    "gitlens.codeLens.enabled": false,
     "terminal.external.linuxExec": "/usr/bin/ptyxis",
     "terminal.integrated.suggest.enabled": false,
     "editor.minimap.enabled": false,
@@ -98,7 +99,10 @@
         "*": false
     },
     "yaml.schemas": {
-        "file://${userHome}/.vscode/extensions/continue.continue-2.0.0-linux-x64/config-yaml-schema.json": [
+        "file:///home/rick/.vscode/extensions/continue.continue-2.0.0-linux-x64/config-yaml-schema.json": [
+            ".continue/**/*.yaml"
+        ],
+        "file:///home/robot/.vscode/extensions/continue.continue-2.0.0-linux-x64/config-yaml-schema.json": [
             ".continue/**/*.yaml"
         ]
     }
