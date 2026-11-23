@@ -163,14 +163,15 @@ HISTFILESIZE=2000
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
 
-alias vi='vim'
+alias vi='nvim'
+alias vim='nvim'
+export EDITOR="nvim"
+
 alias re='reboot'
 alias po='sudo shutdown --poweroff'
-#alias code='code --proxy-server="socks5h://127.0.0.1:10808"'
 alias curlx='curl -x "socks5h://127.0.0.1:10808"'
 
 export PATH=$HOME/.local/bin:$HOME/.cargo/bin:/usr/local/go/bin:$HOME/.minio-binaries:$PATH
-export EDITOR="vim"
 alias open='gio open'
 
 # ---- K8s --------
@@ -200,6 +201,9 @@ export FZF_COMPLETION_OPTS='--border --info=inline'
 
 complete -C "${HOME}"/.minio-binaries/mc mc
 
+# https://silo.pgsty.com/download/#client-packages
+complete -C /usr/local/bin/mcli mcli
+
 ## Go Proxy
 # export GO111MODULE=on
 # export GOPROXY=https://goproxy.cn
@@ -209,6 +213,7 @@ complete -C "${HOME}"/.minio-binaries/mc mc
 alias gvdiff='git difftool --tool=vimdiff --no-prompt'
 
 alias mkpasswd='mkpasswd --method=SHA-512'
+
 # ---- Set proxy --------
 
 custom_setproxy() {
