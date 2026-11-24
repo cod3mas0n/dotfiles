@@ -163,9 +163,8 @@ HISTFILESIZE=2000
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
 
-alias vi='nvim'
-alias vim='nvim'
-export EDITOR="nvim"
+alias vi='vim'
+export EDITOR="vim"
 
 alias re='reboot'
 alias po='sudo shutdown --poweroff'

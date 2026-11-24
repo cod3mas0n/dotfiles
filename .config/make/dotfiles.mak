@@ -41,22 +41,12 @@ tmux: ## Links .tmux.conf to ~/.tmux.conf
 	ln -fs ${DOTFILES_DIR_PATH}/.tmux.conf ~/.tmux.conf
 
 .PHONY: vim
-vim: ## Links .vimrc to ~/.vimrc and install vim plugins
+vim: ## Links .vimrc and installs Vim plugins with vim-plug
 	@echo "## —— vim ------------------------------------------------------------------------------------------"
 	@mkdir -p ~/.vim
 
-	@rm -rf ~/.vim/colors &> /dev/null | true
-	@rm -rf ~/.vim/autoload &> /dev/null | true
-	@rm -rf ~/.vim/bundle/Vundle.vim | true
-
-	ln -fs ${DOTFILES_DIR_PATH}/.vim/colors ~/.vim/colors
-	ln -fs ${DOTFILES_DIR_PATH}/.vim/autoload ~/.vim/autoload
 	ln -fs ${DOTFILES_DIR_PATH}/.vim/shell_header.temp ~/.vim/shell_header.temp
 	ln -fs ${DOTFILES_DIR_PATH}/.vimrc ~/.vimrc
 
-	@git clone --quiet https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-	@vim +PluginInstall +qall
-	@vim +PluginUpdate +qall
 	@curl -fSsLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-	@vim +PlugInstall +qall
-	@vim +PlugUpdate +qall
+	@vim +PlugInstall\ --sync +qa
