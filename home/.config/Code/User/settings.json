@@ -11,7 +11,6 @@
     "editor.fontWeight": "normal",
     "python.analysis.completeFunctionParens": true,
     "python.analysis.autoImportCompletions": true,
-    "workbench.startupEditor": "none",
     "ansible.python.interpreterPath": "/usr/bin/python3",
     "ansible.ansible.path": "/usr/bin/ansible",
     "breadcrumbs.enabled": false,
@@ -86,24 +85,7 @@
     "terminal.integrated.suggest.enabled": false,
     "editor.minimap.enabled": false,
     "terminal.integrated.initialHint": false,
-    "yaml.disableSchemaDetection": [
-        "**/.github/workflows/*.yml",
-        "**/.github/workflows/*.yaml",
-        "**/.gitea/workflows/*.yml",
-        "**/.gitea/workflows/*.yaml",
-        "**/.forgejo/workflows/*.yml",
-        "**/.forgejo/workflows/*.yaml"
-    ],
     "editor.inlineSuggest.enabled": true,
-    "github.copilot.enable": {
-        "*": false
-    },
-    "yaml.schemas": {
-        "file:///home/rick/.vscode/extensions/continue.continue-2.0.0-linux-x64/config-yaml-schema.json": [
-            ".continue/**/*.yaml"
-        ],
-        "file:///home/robot/.vscode/extensions/continue.continue-2.0.0-linux-x64/config-yaml-schema.json": [
-            ".continue/**/*.yaml"
-        ]
-    }
+    "window.restoreWindows": "none",
+    "workbench.startupEditor": "welcomePage"
 }
