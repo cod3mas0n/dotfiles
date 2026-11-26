@@ -45,6 +45,7 @@ Plug 'preservim/nerdtree'
 Plug 'fatih/vim-go'
 Plug 'godlygeek/tabular'
 Plug 'preservim/vim-markdown'
+Plug 'joshdick/onedark.vim'
 call plug#end()
 
 " Leader and mappings
