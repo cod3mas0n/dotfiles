@@ -44,9 +44,11 @@ tmux: ## Links .tmux.conf to ~/.tmux.conf
 vim: ## Links .vimrc and installs Vim plugins with vim-plug
 	@echo "## —— vim ------------------------------------------------------------------------------------------"
 	@mkdir -p ~/.vim
+	@git clone https://github.com/folke/tokyonight.nvim ~/.vim/tokyonight
 
 	ln -fs ${DOTFILES_DIR_PATH}/.vim/shell_header.temp ~/.vim/shell_header.temp
 	ln -fs ${DOTFILES_DIR_PATH}/.vimrc ~/.vimrc
 
 	@curl -fSsLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+	@vim +PlugUpdate\ --sync +qa
 	@vim +PlugInstall\ --sync +qa

@@ -45,7 +45,6 @@ Plug 'preservim/nerdtree'
 Plug 'fatih/vim-go'
 Plug 'godlygeek/tabular'
 Plug 'preservim/vim-markdown'
-Plug 'joshdick/onedark.vim'
 call plug#end()
 
 " Leader and mappings
@@ -75,14 +74,17 @@ highlight Search ctermbg=DarkGray ctermfg=Red
 highlight QuickFixLine term=reverse ctermbg=52
 highlight BadWhitespace ctermbg=red guibg=darkred
 
-let g:onedark_hide_endofbuffer = 1
-let g:onedark_termcolors = 256
-let g:onedark_terminal_italics = 1
-try
-  colorscheme onedark
-catch /^Vim\%((\a\+)\)\=:E185/
-  colorscheme default
-endtry
+" Onedark
+" let g:onedark_hide_endofbuffer = 1
+" let g:onedark_termcolors = 256
+" let g:onedark_terminal_italics = 1
+" colorscheme onedark
+
+" Tokyonight
+set rtp+=~/.vim/tokyonight/extras/vim
+let g:tokyonight_style = 'night'
+let g:tokyonight_enable_italic = 1
+colorscheme tokyonight
 
 " Language-specific settings
 augroup editor_filetypes
